@@ -1,0 +1,113 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+
+html body{
+    font-family: cursive;
+  }
+  h1, h2, h3{
+    font-family: cursive;
+  }
+      body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+      }
+      input{
+        opacity: .7;
+      }
+  .row{
+    margin: 0 auto;
+    width: 60%;
+  }
+    .signup{
+      width: auto; 
+      height: auto;
+      position: relative;
+      /* margin: 0 auto; */
+    /* background: lightblue; */
+    /* background-color: rgba(0, 0, 100, .2); */
+     padding: 20px;
+     margin: 10%;
+     background: rgba(214, 214, 214, 0.411);
+     /* border: 1.5px solid rgb(226, 43, 43); */
+     right: 0;
+     box-shadow: 10px 20px 30px rgba(0, 0, 0, .3) , 8px 21px 8px rgba(0, 0, 0, .22);
+    }
+   
+  
+    a{
+      /* text-decoration: none; */
+      color: orangered;
+      cursor: pointer;
+    }
+  
+  .btn{
+    justify-content: center;
+    align-items: center;
+   margin-left: 19.5%; 
+  border:  none;
+  border-radius: 0;
+    width: 60%;
+    height: 35px;
+    background: rgb(177, 60, 39); 
+    color: white;
+  }
+  
+  #reg{
+    background: rgb(177, 60, 39); 
+    color: white;
+  }
+  #reg:hover{
+    background: rgb(105, 103, 103);
+  }
+  
+    button{
+   
+      font-size: 110%;
+      font-weight: lighter;
+      font-family: cursive;
+      color: #fff;
+      margin-top: 0%;
+      margin: 1%;
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+  
+    @media only screen and (max-width: 768px){
+       .signup{
+        margin: 50px 0 30%;
+        margin: 14%;
+        align-items: center;
+        justify-content :center;
+        position: relative;
+        
+        right: 0;
+        
+      } 
+       
+      button{
+        font-size: 80%;
+        margin-bottom: 20%;
+       
+      }
+  
+      .btn{
+        margin-top: -16px;
+        position: absolute;
+        padding: 1px 3% 1px;
+      }
+  
+      .info{
+        color:  rgb(113, 0, 241); 
+      }
+  
+      p,h2{
+        font-size: 100%;
+        margin-top: 4%;
+      }
+  
+      
+    }
+   

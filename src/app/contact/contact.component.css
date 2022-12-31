@@ -1,0 +1,18 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.container{
+    background: rgba(214, 214, 214, 0.411);
+    height: 85vh;
+    width: 30%;
+}
+
+*{
+    /* margin-left:3%; */
+    color: rgb(255, 246, 246);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input, textarea{
+    color: rgba(182, 37, 11, 0.795);
+    opacity: .6;
+}
+

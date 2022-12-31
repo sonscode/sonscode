@@ -1,0 +1,167 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.aabout{
+    display: flex;
+    /* width: 60%; */
+    margin: 0 auto;
+    
+}
+.left{
+    width: 200%;
+    margin-left:20%;
+
+}
+.right{
+    width: 200%;
+    display: block;
+    margin: 0em 0 0 -40%;
+}
+
+.top{
+    display: flex;
+}
+.bottom{
+    display: flex;
+    margin-top: 5em;
+}
+.pic-container{
+    display: block;
+}
+.pic{
+    width: 40%;
+    height: 93%;
+    border: 1px solid rgba(182, 37, 11, 0.73);
+    border-radius: 50%;
+    padding: 0.3em;
+    margin: 2em 0 0 8em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pic>img{
+position: relative;
+    margin: -0.07em 0 0 .10em
+
+}
+
+.pic-container > p{
+    text-align: justify;
+}
+
+/* picture one */
+.onImage{
+    margin-top: 2.5em;
+    width: 37%;
+    background-color: rgb(177, 60, 39);
+    transition: all .3s .0s ease-in-out;
+    content: url("/assets/images/Aadmin.png");
+}
+
+.onDesc{
+    background-color: #333;
+    border-radius: 0;
+    content: none;
+    transform: rotateY(180deg);
+    transition: all .3s .0s ease-in-out ;
+    box-shadow: 10px 10px 10px 10px gray;
+    width: 60%;
+    margin-right: 2em;
+
+}
+
+.static{
+    visibility: hidden;
+}
+.turn{
+    transform: rotateY(180deg);
+    visibility: visible;
+}
+/* picture one */
+
+/* picture two */
+.onImage1{
+    margin-top: 2.5em;
+
+    background-color: rgb(177, 60, 39);
+    transition: all .3s .0s ease-in-out;
+    content: url("/assets/images/Aadmin.png");
+}
+
+.onDesc1{
+    background-color: #333;
+    border-radius: 0;
+    content: none;
+    transform: rotateY(180deg);
+    transition: all .3s .0s ease-in-out ;
+    box-shadow: 10px 10px 10px 10px gray;
+    width: 60%;
+    margin-right: 18em;
+}
+
+.static1{
+    visibility: hidden;
+}
+.turn1{
+    transform: rotateY(180deg);
+    visibility: visible;
+}
+/* picture two */
+
+/* picture 3 */
+.onImage2{
+    width: 37%;
+    background-color: rgb(177, 60, 39);
+    transition: all .3s .0s ease-in-out;
+    content: url("/assets/images/Aadmin.png");
+}
+
+.onDesc2{
+    background-color: #333;
+    border-radius: 0;
+    content: none;
+    transform: rotateY(180deg);
+    transition: all .3s .0s ease-in-out ;
+    box-shadow: 10px 10px 10px 10px gray;
+    width: 60%;
+    margin-right: 2em;
+
+}
+
+.static2{
+    visibility: hidden;
+}
+.turn2{
+    transform: rotateY(180deg);
+    visibility: visible;
+}
+/* picture 3 */
+
+/* picture 4 */
+.onImage3{
+    
+    background-color: rgb(177, 60, 39);
+    transition: all .3s .0s ease-in-out;
+    content: url("/assets/images/Aadmin.png");
+}
+
+.onDesc3{
+    background-color: #333;
+    border-radius: 0;
+    content: none;
+    transform: rotateY(180deg);
+    transition: all .3s .0s ease-in-out ;
+    box-shadow: 10px 10px 10px 10px gray;
+    width: 60%;
+    margin-right: 18em;
+
+}
+
+.static3{
+    visibility: hidden;
+}
+.turn3{
+    transform: rotateY(180deg);
+    visibility: visible;
+}
+/* picture 4 */

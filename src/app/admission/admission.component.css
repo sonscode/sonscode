@@ -1,0 +1,29 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+h5{
+    color: rgb(177, 60, 39);
+}
+.containerr{
+   display: block;
+   
+}
+
+#directives{
+    display: block;
+    margin-left: 1em;
+}
+
+.mark-list{
+    width: 100%;
+    margin-left: 0;
+    /* margin-left: 10em; */
+}
+.left-panel{
+    width: 30%;
+    margin-left: 1em;
+}
+.active-link{
+    background-color: rgb(105, 103, 103);
+  }
+  
+

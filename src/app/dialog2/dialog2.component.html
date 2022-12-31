@@ -1,0 +1,284 @@
+<h2 mat-dialog-title>Assign marks to students ~ Form 2</h2>
+
+<div mat-dialog-content>
+
+  <form [formGroup]="markForm">
+
+    <div class="coeff" style="display: flex; color: darkkhaki; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+      <Label>
+        <h5>
+          Specify your subject(s)!</h5>
+      </Label>
+      <label for="" class="labcoef" >Coefficient:</label>
+      <h5  formControlName="coef">&nbsp; {{this.getCoef()}}</h5>
+    </div>
+
+    <mat-form-field class="head" id="seq" appearance="outline">
+        <mat-label>Sequence</mat-label>
+        <mat-select placeholder="Sequence no." formControlName="sequenceName" >
+          <mat-option *ngFor="let sequence of sequences" [value]="sequence.value">
+            {{sequence.viewValue}}
+          </mat-option>
+        </mat-select>
+        <mat-hint>enter the squence</mat-hint>
+      </mat-form-field>
+
+    <mat-form-field class="head" appearance="outline">
+      <mat-label>Subject</mat-label>
+      <mat-select placeholder="Subject" formControlName="subjectName" >
+        <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+          {{subject.viewValue}}
+        </mat-option>
+      </mat-select>
+      <mat-hint>enter your subject</mat-hint>
+    </mat-form-field> 
+    
+    <br /> <br />
+    <Label>
+      <h6
+        style="color: darkkhaki; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Enter the marks according to each name!</h6>
+    </Label> <br/> <br/>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Ataaji Samuel</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name1"   min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Ayuk Enow</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name2"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Bah Treasure</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name3"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Batchanou Ndoukeu</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name4"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Forghang Nadia</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name5"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Mayoh Jaques</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name6"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Mbwang Njume</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name7"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Mounga Balla</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name8"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Oyen Evelyne</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name9"  min="0" max="20"> 
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Sibafo David</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name10" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <mat-form-field appearance="outline">
+      <mat-label>Tefang Dalinton</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name11" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name12" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name13" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name14" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name15" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name16" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name17" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name18" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name19" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name20" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name21" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name22" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name23" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name24" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name25" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name26" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name27" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name28" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name29" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+
+    <mat-form-field appearance="outline">
+      <mat-label>Next name</mat-label>
+      <input type="number" matInput placeholder="" formControlName="name30" min="0" max="20">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint>Enter mark</mat-hint>
+    </mat-form-field>
+    &nbsp;&nbsp;
+  </form>
+</div>
+
+<br />
+<br />
+
+<div mat-dialog-action [align]="'end'">
+  <button class="close" mat-dialog-close>Close</button>
+  <button class="addBtns" (click)="addSomeMarks2()">{{actionBtn}}</button>
+  <!-- <button class="addBtns" (click)="checkMarks(this.markForm.value.subjectName)">check</button> -->
+</div>
+
+

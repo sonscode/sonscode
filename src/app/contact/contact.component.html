@@ -1,0 +1,62 @@
+<br />
+<br />
+
+<br />
+<div class="container mb-5 w-50">
+<Label ><h3 style="color: rgba(202, 43, 4, 0.719); font-family: cursive; vertical-align: top; margin: 0 auto; text-align: center; ">Send us a message!</h3></Label>
+
+    <div *ngIf = "submitted" class="alert alert-success">
+        <h6 style="color: rgba(8, 168, 94, 0.788); font-weight: lighter; font-family:monospace;">Your message has been submitted! Thanks!</h6>
+    </div>
+    <div class="alert alert-danger" *ngIf="errorMsg">
+        <h6 style="color: rgba(230, 46, 0, 0.89); font-weight: lighter; font-family:monospace;">{{errorMsg}}</h6>
+    </div>
+    <form (ngSubmit)= "onSubmit()"  #userForm="ngForm" novalidate>
+        <!-- *ngIf="!submitted" -->
+        <div class="form-group">
+            <label style="font-size: large; font-weight: lighter;" for="name">Name</label>
+            <input type="text" required id="name" placeholder="Your full name" #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+                [class.is-valid]="name.valid" class="form-control" [(ngModel)]="userModel.name" name="userName">
+                <small [class.d-none]= "name.valid || name.untouched"  style="color: rgb(17, 112, 255);">name is required</small>
+        </div>
+
+        <div class="form-group">
+            <label style="font-size: large; font-weight: lighter;" for="email">Email</label>
+            <input type="email" #email="ngModel" placeholder="example@gmail.com" [class.is-invalid]="email.invalid && email.touched" required
+                [class.is-valid]="email.valid" name="email" id="email" class="form-control" [(ngModel)]="userModel.email">
+            <small [class.d-none] = "email.valid || email.untouched" style="color: rgb(17, 112, 255);">email is required</small>
+           
+        </div>
+
+        <div class="form-group">
+            <label style="font-size: large; font-weight: lighter;" for="phone">Phone</label>
+            <input type="tel" #phone="ngModel" placeholder="tel here" pattern="^\d{9}$" [class.is-invalid]="phone.invalid && phone.touched"
+            required name="phone" id="phone" class="form-control" [(ngModel)]="userModel.phone" [class.is-valid]="phone.valid">
+            <small [class.d-none] = "phone.valid || phone.untouched" style="color: rgb(17, 112, 255);">phone is required and must be 9 digits</small>
+            <!-- <div *ngIf= "phone.errors && (phone.invalid || phone.touched)">
+                <small  *ngIf="['phone.errors.required']">Phone is required</small> <br>
+                <small  *ngIf="['phone.errors.pattern']">Phone must be 9 digits</small>
+            </div> -->
+        </div>
+
+        <div class="form-group">
+            <label style="font-size: large; font-weight: lighter;" for="msg">Message</label>
+            <textarea cols="20" placeholder="Your message" rows="4" type="tel" name="msg" id="msg" class="form-control"
+                [(ngModel)]="userModel.message"></textarea>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="subscribe" id="" class="form-check-input" [(ngModel)]="userModel.subscribe">
+            <label for="" class="form-check-label">
+                Send me a copy
+            </label>
+        </div>
+
+        <button [disabled] ="userForm.form.invalid" type="submit">Submit form</button>
+
+    </form>
+</div>
+ <br/>
+ <br/>
+ <br/>
+<app-footer></app-footer>

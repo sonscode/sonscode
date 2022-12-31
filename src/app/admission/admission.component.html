@@ -1,0 +1,20 @@
+<div  id="directives">
+    <!-- <h5>This is where only teachers are permitted to post student marks.</h5> -->
+    <h6 style="color: white;">Choose the level</h6>
+</div>
+
+<div class="containerr mb-5 w-100">
+
+    <aside class="left-panel">
+        <button routerLink="/marks/form1" routerLinkActive="active-link">Form1</button> 
+        <button routerLink="/marks/form2" routerLinkActive="active-link">Form2</button>
+        <button routerLink="/marks/form3" routerLinkActive="active-link">Form3</button>
+        <button routerLink="/marks/form4" routerLinkActive= "active-link">Form4</button>
+    </aside>
+    <!-- *** -->
+    <section class="mark-list" >
+        <router-outlet></router-outlet>
+    </section>
+</div>
+
+    

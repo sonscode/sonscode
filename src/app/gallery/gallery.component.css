@@ -1,0 +1,170 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.active-link{
+    background: rgb(105, 103, 103);
+
+  }
+
+h3{
+    margin-left: 0em;
+}
+
+  button{
+    width: 5em;
+    height: 3em;
+}
+  input{
+    background-color:rgba(105, 103, 103, 0.363);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1em;    
+    margin-top: 0rem;
+    width: 3.645em;
+    height: 1em;
+    outline: none;
+    margin: 0;
+}
+
+input:hover{
+    background-color: rgba(182, 37, 11, 0.795);
+    color: #fff;
+}
+
+.name{
+    width: 10.9em;
+    margin-left: -10.2em;
+    border-right: 1px solid rgba(182, 37, 11, 0.795);
+    color: rgba(2, 143, 61, 0.836);
+}
+#studCol{
+    height: 2.1em;
+    background: rgba(182, 37, 11, 0.795);
+    border: none;
+    color: #fff;
+}
+#navbar{
+    margin-left: 2.1em;
+    margin-top: 3em;
+    position: relative;
+}
+.addBtns{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    padding-bottom: 2.4rem;
+    /* padding-right: 2rem; */
+    width: 7em;
+    height: .4em;
+    margin-left: 0em;
+    /* position: fixed;
+    top: 14.5em;
+    left: 1.75em; */
+    /* margin-top: 2%; */
+}
+
+.addBtns:hover{
+    background: rgba(105, 103, 103, 0.781);
+}
+#actions, .addBtns{
+    background: rgba(2, 143, 61, 0.774);
+    color: #fff;
+}
+#actions:hover{
+    background: rgb(105, 103, 103);
+    
+}
+
+.upperClass{
+    display: flex;
+}
+.searchbar{
+    /* margin-left: 10%; */
+    margin: 0 auto;
+    margin-top: -4%;
+    width: 400px;
+}
+
+.searchbar input{
+    background: none;
+    width: 500px;
+    color: indigo;
+}
+.searchbar input:hover{
+    background: none;
+
+}
+
+.container{
+    margin-left: 0em;
+    overflow-x: scroll;
+}
+/* .mat-elevation-z8{
+    margin-left: -20%;
+} */
+
+#action{
+    display: flex;
+    text-align: left;
+}
+
+.actBtn{
+    width: 2em;
+    height: 1.7em;
+}
+
+.totals{
+    width: 145em;
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.totals, .tr-cell, .tr-cell td {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bold; */
+    font-size: medium;
+}
+
+
+.tr-cell{
+    /* padding-left: .2em; */
+    text-align: center;
+}
+
+/* #fist{
+    margin-left: 0;
+} */
+
+.td-cell{
+    text-align: center;
+    /* padding: 0 0 0 .7em; */
+}
+
+.tr-cell{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+
+}
+
+.tr-cell td{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+thead > tr{
+    border-bottom: 3px solid white;
+}
+
+.av{
+    color: rgb(143, 5, 5);
+}
+
+.term-totals{
+    border-top: 3px solid white;
+    color: rgb(92, 1, 1);
+}
+/* 
+.tr-cell td{
+    width: 0%;
+} */
+

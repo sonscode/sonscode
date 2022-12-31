@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+
+
+html, body, app-root{
+    height: 100%;
+}
+
+body{
+    background-color: #aaa;
+    margin-bottom: 0;
+    margin-top: 0;
+    /*background-image: url("../assets/images/Aboy.png");*/
+    
+}
+
+h1{
+  /*  color: rgb(204, 31, 0);*/
+  color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    font-weight: lighter;
+}
+
+h2, h3{
+  color: #fff;
+  /*color: rgb(250, 106, 62);*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body, input[type = "text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+button{
+    background-color: rgba(182, 37, 11, 0.795);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1em;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+button:hover{
+    background-color: rgb(105, 103, 103);
+    color: #fff;
+}
+button:disabled{
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/*... ... ...*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* contact form style */
+.ng-valid[required], .ng-valid.required {border: 1px solid #42A948;}
+.error {color:#ff0000;}
+.success { color:green; }
+.contact-message { text-align: center; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

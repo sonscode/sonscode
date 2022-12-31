@@ -1,0 +1,164 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.active-link{
+    background: rgb(105, 103, 103);
+
+  }
+  button{
+    width: 5em;
+    height: 3em;
+  }
+  input{
+    background-color:rgba(105, 103, 103, 0.363);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1em .5em 1em 1em;
+    /* text-align: left; */
+    width: 4.37em;
+    height: 1em;
+    outline: none;
+    /* margin: 0; */
+}
+
+input:hover{
+    background-color: rgba(19, 151, 2, 0.637);
+    color: #fff;
+}
+
+.name{
+    width: 5.2em;
+    cursor:copy;
+    /* border-right: 1px solid green; */
+    color: rgba(2, 143, 61, 0.973);
+}
+#subName{
+    font-weight: lighter;
+    width: 4.4em;
+}
+.studName{
+    cursor: default;
+    width: 6em;
+    background: rgb(87, 87, 87);
+}
+
+.studName, #studCol{
+    height: 4.25em;
+}
+
+#studCol{
+    background: rgba(20, 151, 2, 0.795);
+    border: none;
+    color: #fff;
+
+}
+#studCol{
+    width: 6em;
+
+}
+
+#navbar{
+    margin-left: 2.1em;
+    margin-top: .6rem;
+    position: relative;
+    
+}
+
+.container{
+
+    overflow-x: scroll;
+}
+
+.addBtns{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    margin-left: 0;
+    /* margin-top: -10%; */
+    padding-bottom: 2.4rem;
+    width: 7em;
+    height: .4em;
+}
+
+.addBtns:hover{
+    background: rgba(105, 103, 103, 0.781);
+}
+.actions, .addBtns{
+    background: rgba(2, 143, 61, 0.774);
+    color: #fff;
+}
+.actions:hover, #delBtn:hover{
+    background: rgba(255, 255, 255, 0.178);
+    
+}
+.actions{
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 1.1em .6em 1.1em .6em;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    width: 5em;
+    height: 1em;
+    margin: 0;
+    background: none;
+}
+
+#delBtn{
+    color: rgba(182, 37, 11, 0.795);
+    
+}
+
+#editBtn{
+    color: indigo;
+}
+
+#delBtn, #editBtn{
+    width: 4.35em;
+    padding-bottom: 1. 4em;
+}
+
+
+#update, #delete{
+    width: 5em;
+    text-align: left;
+}
+
+tr th, tr td{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+
+.delAll{
+    background-color: rgba(192, 33, 5, 0.884);
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+    width: 7em;
+    height: .3em;
+    float: right;
+    /* margin-right: 3%; */
+}
+
+.delAll:hover{
+    background-color: rgb(105, 103, 103);
+    /* color: #fff; */
+}
+
+.term-totals td input{
+    /* color: rgba(222, 226, 2, 0.897); */
+    color: indigo;
+    
+}
+.term-totals td input:hover{
+    background: rgba(92, 6, 153, 0.315);
+}
+
+.term-av td input{
+    color: rgba(145, 22, 0, 0.904);
+}
+
+.term-av td input:hover{
+    background: rgba(180, 30, 3, 0.281);;
+}

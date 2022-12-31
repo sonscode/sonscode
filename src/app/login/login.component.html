@@ -1,0 +1,48 @@
+<!--Sign up form-->
+<div class="row">
+    <div class="container-fluid">
+        <div class="signup w-70" id="connect">
+            <!--class="col-lm-3" -->
+            <div class="content">
+
+                <form novalidate class="justify-content-center" #userForm="ngForm">
+
+                    <h2 style="vertical-align: top; color: rgba(202, 43, 4, 0.719); ">Login</h2>
+
+
+                    <div class="form-group">
+                        <input required id="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"
+                            class="form-control" type="email" placeholder="example@email.com"
+                            [(ngModel)]="teacher.email" name="email">
+                            <small class="invalid-feedback"><span [class.d-none]="email.valid || email.untouched"
+                                style="color: gold;">email is required</span></small>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <input required id="password" placeholder="Enter a password" #password="ngModel"
+                            [class.is-invalid]="password.invalid && password.touched" class="form-control"
+                            type="password" [(ngModel)]="teacher.password" name="password">
+                            <small class="invalid-feedback"><span [class.d-none]="password.valid || password.untouched"
+                                style="color: gold;">password is required and should be at least 9
+                                characters</span></small>
+                    </div>
+                    <br>
+
+                    <button (click)="login()" class="btn btn-primary" id="reg" type="button"
+                        style=" border: none; width: 40%; margin: 0 auto;"
+                        [disabled]="userForm.form.invalid">Login</button>
+                    <br />
+                    <br />
+              
+                    <p>Don't have an account, <a routerLink="/register">register</a></p>
+                    <!--Connecting to signin form-->
+                    <h2>Welcome </h2>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br /><br /><br /><br /><br />
+<app-footer></app-footer>
+<!--Sign up form-->

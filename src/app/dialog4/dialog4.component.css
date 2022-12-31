@@ -1,0 +1,43 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.head{
+    width: 35%;
+
+}
+
+mat-form-field{
+    margin-left: 13%;
+    width: 16%;
+    
+}
+.addBtns{
+    background: rgba(2, 143, 61, 0.774);
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    /* padding-right: 2rem; */
+    width: 15%;
+    padding: 1em 1em 1em 1em;
+    margin-left: 0%;
+}
+
+.addBtns:hover, .close:hover{
+    background: rgba(105, 103, 103, 0.781);
+}
+
+.close{
+    /* background: rgba(143, 11, 2, 0.774); */
+    background: rgb(216, 201, 64);
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    /* padding-right: 2rem; */
+    width: 15%;
+    padding: 1em 1em 1em 1em;
+    margin-right: 4%;   
+}
+
+.coeff>.labcoef{
+    margin-left: 30%;
+
+}

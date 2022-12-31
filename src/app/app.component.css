@@ -1,0 +1,117 @@
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+
+.containerr{
+  height: 100%;
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column; */
+}
+.inner-container{
+  /* padding-bottom: 36px; */
+  min-height: 100%;
+
+}
+
+.img{
+    background-image: url("../assets/images/Aboy.png");
+    height: 97vh;
+    background-size: 25em 40em;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+  .top{
+    display: flex;
+  }
+  .top-next{
+    margin: 1em auto;
+    display: flex;
+  }
+ #top1 > img{
+    width: 2em;
+    height: 3em;
+  }
+  #top2 > img{
+    width: 3em;
+    height: 3em;
+  }
+  #top1, #top2{
+    display: flex;
+  }
+  nav{
+    width: 70%;
+    height: 2.2vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2.0em 0em 1.9em 0em;
+    border-radius: 50px;
+    text-decoration-color: rgb(204, 31, 0);
+    display: flex;
+    opacity: .4;
+    overflow: hidden;
+    /* position: fixed;
+    top: 4.4em;
+    left: 15em; */
+    z-index: 20;
+  }
+  
+  .nav-link{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    margin-left: 10%;
+    position: sticky;
+  }
+  .nav-link:hover{
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+    font-weight: bold;
+    font-size:medium;
+    color: red;
+  }
+
+  /* .nav-link-ex{
+    left: 2%;
+  } */
+
+.nav-link-ex > img{
+    width: 1.7em;
+    height: 1.7em;
+    margin-left: -2%;
+  }
+  .active-link{
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .top-active-link{
+    color: rgb(177, 60, 39);
+    font-size: large;
+    border: none;
+   
+  }
+
+  .regBtns{
+    cursor: pointer; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 4em;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0em .7em .2em .7em;
+    height: 1.2em;
+  }
+
+  #intend{
+    margin-left: 4%;
+    position: absolute;
+  }
+
+  #extend{
+    margin-left: 55%;
+    position: absolute;
+  }
+
+/* *******************footer style here ******************** */
